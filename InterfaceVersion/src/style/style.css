@@ -1,0 +1,8 @@
+.hover_border :hover {
+
+-fx-border-color:#0fbcf9;
+-fx-border-witdh: 0px 0px 0px 2px;
+-fx-background-color: #34e7e4e0;
+
+
+}
