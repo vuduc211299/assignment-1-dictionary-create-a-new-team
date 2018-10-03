@@ -4,11 +4,18 @@ public class DictionaryCommandline {
     private  int th;
     public  void   dictionaryBasic()
     {
-                  DictionaryManagement dm= new DictionaryManagement();
-                  dm.insertFromFile();
-                  dm.insertFromCommandline();
-                  dm.dictionaryLookup();
-                  showAllWords();
+        DictionaryManagement dm= new DictionaryManagement();
+        dm.insertFromCommandline();
+        showAllWords();
+    }
+
+    public  void   dictionaryAdvanced()
+    {
+        DictionaryManagement dm= new DictionaryManagement();
+        dm.insertFromFile();
+        dm.insertFromCommandline();
+        dm.dictionaryLookup();
+        showAllWords();
     }
     public  void showAllWords()
     {
