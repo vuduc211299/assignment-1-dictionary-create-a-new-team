@@ -1,0 +1,6 @@
+cat	con meo
+dog	con cho
+house	ngoi nha
+apple	qua tao
+orange	qua cam
+color	mau sac
