@@ -1,0 +1,3 @@
+dog	con cho
+cat	con meo
+house	ngoi nha
