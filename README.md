@@ -1,12 +1,21 @@
 
-![scr](https://user-images.githubusercontent.com/15611134/46222640-30af7900-c37b-11e8-87d8-e37bfab8fea3.PNG)
+![scr](https://user-images.githubusercontent.com/15611134/46524596-8328f200-c8b3-11e8-9d95-7e549f9c2a99.PNG)
+
 ## ToDo
 ---
 
-* Key bản quyền ,Trial version (jkd)
+* Performance improvement
 
-*  Add/Update function.
+*  GUI  improvement 
 
 *  Multilanguage Support.
+
+*  Favorite word , history
+
+*  Oxford dictionary api
+
+
+
+
 
 
