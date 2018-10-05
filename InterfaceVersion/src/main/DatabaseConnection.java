@@ -4,13 +4,12 @@ import java.sql.*;
 
 public class DatabaseConnection
 {
-    public static Connection LoginConnector()
+    public static Connection getConnection()
     {
         try
         {
             Class.forName("org.sqlite.JDBC");
-            Connection conn=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Hung Do\\Desktop\\Exe3\\src\\Database\\dict_hh.db");
-            return conn;
+            return DriverManager.getConnection("jdbc:sqlite:C:/Users/Hung Do/Desktop/InterfaceVersion/src/Database/dict_hh.db");
         }
         catch(Exception e)
         {

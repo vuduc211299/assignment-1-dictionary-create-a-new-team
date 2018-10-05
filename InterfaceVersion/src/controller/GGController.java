@@ -3,12 +3,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import java.io.IOException;
 import  javafx.scene.text.Text;
-import main.GoogleTranslate;
+import gtranslate.GoogleTranslate;
 import main.IsConnected;
 
 import java.util.Map;
@@ -43,11 +44,11 @@ private  Text res;
         map.put("Japanese","ja");
         map.put("Chinese","zh");
         map.put("Thailand","th");
-        ObservableList<String> languages
-                = FXCollections.observableArrayList("Vietnamese","English","Korean","Chinese","Thailand","Japanese");
-
+        ObservableList<String> languages = FXCollections.observableArrayList("Vietnamese","English","Korean","Chinese","Thailand","Japanese");
         cb1.setItems(languages);
         cb2.setItems(languages);
+        cb2.setValue("Vietnamese");
+        cb1.setValue("English");
     }
     @FXML
     public  void exchange()
@@ -55,8 +56,6 @@ private  Text res;
         String temp=cb1.getValue();
         cb1.setValue(cb2.getValue());
         cb2.setValue(temp);
-
-
     }
 
     @FXML
@@ -73,15 +72,17 @@ private  Text res;
               }
               else
               {
-                res.setText("Khong co ket noi internet");
+                  Alert alert = new Alert(Alert.AlertType.WARNING);
+                  alert.setTitle("Error ");
+                  alert.setHeaderText(null);
+                  alert.setContentText("No internet connection!");
+                  alert.showAndWait();
               }
-
-
-
+          }
+          catch (InterruptedException e) {
+              e.printStackTrace();
           }
           catch (IOException e) {
-              e.printStackTrace();
-          } catch (InterruptedException e) {
               e.printStackTrace();
           }
 

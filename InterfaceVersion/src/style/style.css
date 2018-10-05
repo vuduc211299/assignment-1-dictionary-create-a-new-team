@@ -3,6 +3,19 @@
 -fx-border-color:#0fbcf9;
 -fx-border-witdh: 0px 0px 0px 2px;
 -fx-background-color: #34e7e4e0;
-
-
 }
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #00b0ff;
+    -fx-text-fill: white; 
+}
+.list-view {
+    -fx-background-color: transparent;
+}
+.list-cell:filled:hover { 
+   // -fx-background-color: #03a9f4; 
+
+-fx-background-color: #00bcd4; 
+    -fx-text-fill: white; 
+}
+.list-cell { -fx-text-fill: black;  }
